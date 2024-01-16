@@ -3,9 +3,12 @@
 <head>
 	<meta charset="utf-8">
 <!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Form Activity Solution File</title>
-	
+	<meta name="author" content="Brianna Molina">
+	<meta name="description" content="Accessible Forms">
 <!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<a href="#main-content" id="skipLink">Skip to main content</a>
@@ -28,6 +31,29 @@
 			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
 
 <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+<!-- Add a form to the body with the following form elements:
+----Element for full name (first and last)-----
+Element for user's email address
+Element for user's phone number
+Controls allowing the user to choose their preferred method of contact (email OR phone)
+Element where user can choose their state of residence from a list (find the state names on the 50states websiteLinks to an external site.)
+Element where users can enter any comments they have
+Ability to submit the form
+This form should be keyboard navigable/accessible and properly semantic.
+Be sure to include any necessary name/id/other attributes to the elements, and associate all labels with the proper elements as discussed in class.
+This form should use the POST method and use https://wp.zybooks.com/form-viewer.phpLinks to an external site. for the action.
+Remember that it's important to decide which of the inputs should be required and set the correct attribute on those inputs (also show the user which inputs are required).
+
+-->
+			<form action="https://wp.zybooks.com/form-viewer.php" method="post">
+				<div>
+					<label for="fullName">Full Name<span class="required">&#42;</span></label>
+					<input type="text" id="fullName" name="fullName" required>
+
+					<label for="Email">Email<span class="required">&#42;</span></label>
+					<input type="Email" id="Email" name="Email" required/>
+				</div>
+			</form>
 		</article>
 	</main>
 	<footer>
